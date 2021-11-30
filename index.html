@@ -1,288 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="boot.css" />
+    <script defer src="boot.js"></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p>The One</p>
 
-    <!-- main navbar -->
-    <nav>
-        <div class="logo">
-            <p>The One</p>
-            <p>Shop</p>
-        </div>
+        <p>Shop</p>
+      </div>
 
-        <div class="menu">
-            <ul class="menu-links">
-              <li><a href="#">Shops  <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7" />
-              </svg> </p> </a>
-            
+      <div class="menu">
+        <ul class="menu-links">
+          <li class="menu_list" data-id="shops">
+            Shops <i class="fa fa-caret-down" aria-hidden="true"></i>
+            <div id="shops" class="sub-menu">
+              <ul class="sub-menu-links">
+                <li class="sub-menu-list" data-id="categories" id="categories">
+                  Categories <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </li>
+                <li class="sub-menu-list" data-id="traders">
+                  Traders <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </li>
+                <li class="sub-menu-list" data-id="veg">
+                  Veg Market <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </li>
+                <li class="sub-menu-list" data-id="new">
+                  New <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </li>
+                <li class="sub-menu-list" data-id="trends">
+                  Trends <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </li>
+                <li class="sub-menu-list" data-id="sales">
+                  Hot Sales <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </li>
+                <li class="sub-menu-list" data-id="special">
+                  Special <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </li>
+              </ul>
 
-<!-- sub menu bar -->
- <navbar class="sub_menu">
-  <ul class="sub_menu-links">
-      <li class="sub_items categories"><a href="#">Categories  <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7" />
-      </svg> </p></a> </li>
-      <li class="sub_items"><a href="#">Traders    <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stro ke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7" />
-      </svg> </p></a>
-      
-      </li>
-      <li class="sub_items"><a href="#">Veg Market <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7" />
-      </svg> </p></a> </li>
-        <li class="sub_items"><a href="#">New <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7" />
-        </svg> </p></a> </li>
-        <li class="sub_items"><a href="#">Trends <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7" />
-        </svg> </p></a> </li>
-        <li class="sub_items"><a href="#">Hot Sale <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7" />
-        </svg> </p></a> </li>
-        <li class="sub_items"><a href="#">Special <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7" />
-        </svg> </p></a> </li>
-    
+              <ul class="sub-menu-details-links">
+                <li>
+                  <input type="search" placeholder="Search" />
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </li>
 
-  </ul>
-
-  <div class="details-sub-nav">
-    <ul class="links">
-        <li> <a href="#"> <input type="search" placeholder="Search" /><p> <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-        </svg></p></a>  </li>
-          <li>  <a href="#"><p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-          </svg></p> Cart </a> </li> 
-           
-
+                <li>
+                  Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu_list" data-id="real-state">
+            Rael State <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </li>
+          <li class="menu_list" data-id="automobile">
+            Automobile <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </li>
+          <li class="menu_list" data-id="hot-jobs">
+            Hot JObs <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </li>
+          <li class="menu_list" data-id="locat-dates">
+            Local Dates <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </li>
+          <li class="menu_list" data-id="payments">
+            Payments <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </li>
+          <li class="menu_list" data-id="travel">
+            Travel <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </li>
+          <li class="menu_list" data-id="stay">
+            Stay <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </li>
+          <li class="menu_list" data-id="locals">
+            Locals <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </li>
         </ul>
-        
-</div>
+      </div>
 
+      <div class="details">
+        <ul class="details-links">
+          <li>
+            <i class="fa fa-globe" aria-hidden="true"></i> LN
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </li>
 
-</navbar>
+          <li>
+            <i class="fa fa-inr" aria-hidden="true"></i> CR
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </li>
+          <li>
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </li>
 
-<!-- closing sub menu bar --> 
-</li>
-              <li><a href="#">Real State <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7" />
-              </svg> </p></a>  </li>
-                <li><a href="#">Automobile<p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7" />
-                </svg> </p></a>  </li>
-                <li><a href="#">Hot Jobs <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7" />
-                </svg> </p></a>  </li>
-                <li><a href="#">Local Dates <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7" />
-                </svg> </p></a>  </li>
-                  <li><a href="#">Payments<p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7" />
-                  </svg> </p></a>  </li>
-                  <li><a href="#">Travel <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7" />
-                  </svg> </p></a>  </li>
-                  <li><a href="#">Stay<p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7" />
-                  </svg> </p></a>  </li>
-                    <li><a href="#">Locals<p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7" />
-                    </svg> </p></a>  </li>
-                 
-             
-            </ul>
-        </div>
+          <li>Sign In <i class="fa fa-caret-down" aria-hidden="true"></i></li>
+        </ul>
+      </div>
+    </header>
 
-        <div class="details">
-            <ul class="details-links">
-                <li> <p> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                  </svg></p> <a href="#">LN </a> <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7" />
-                  </svg> </p></li>
-                  <li> <p> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg></p> <a href="#">CR </a> <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7" />
-                  </svg> </p></li> 
-                   <li> <p> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg></p> <a href="#"> </a> <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7" />
-                  </svg> </p> </li>
+    <!-- mega menu start -->
+    <div class="mega_menu" id="mega_menu">
+      <ul class="items_in_mega">
+        <li class="mega-menu_list" data-id="women">
+          Women's Wear <i class="fa fa-caret-right" aria-hidden="true"></i>
+        </li>
+        <li class="mega-menu_list" data-id="men">
+          Men's Wear <i class="fa fa-caret-right" aria-hidden="true"></i>
+        </li>
+        <li class="mega-menu_list" data-id="kids">
+          Kid's Wear <i class="fa fa-caret-right" aria-hidden="true"></i>
+        </li>
+        <li class="mega-menu_list" data-id="electronics">
+          Electronics <i class="fa fa-caret-right" aria-hidden="true"></i>
+        </li>
+        <li class="mega-menu_list" data-id="grocery">
+          Grocery <i class="fa fa-caret-right" aria-hidden="true"></i>
+        </li>
+        <li class="mega-menu_list" data-id="hardware">
+          Hardware <i class="fa fa-caret-right" aria-hidden="true"></i>
+        </li>
+        <li class="mega-menu_list" data-id="mobile">
+          Mobile <i class="fa fa-caret-right" aria-hidden="true"></i>
+        </li>
+        <li class="mega-menu_list" data-id="Laptop">
+          Laptop and PC <i class="fa fa-caret-right" aria-hidden="true"></i>
+        </li>
+        <li class="mega-menu_list" data-id="home">
+          Home Appliances <i class="fa fa-caret-right" aria-hidden="true"></i>
+        </li>
+        <li class="mega-menu_list" data-id="automobile">
+          Automobile <i class="fa fa-caret-right" aria-hidden="true"></i>
+        </li>
+        <li class="mega-menu_list" data-id="real">
+          Real State <i class="fa fa-caret-right" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </div>
 
-                  <li> <a href="#">Sign In </a> <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7" />
-                  </svg> </p> </li>
+    <!-- mega menu end -->
 
-                </ul>
-                
-        </div>
+    <!-- mega menu details start -->
+    <div class="mega_details" id="mega_details">
+      <div class="sirts_and_items">
+        <h4>Women's Clothing</h4>
 
-    </nav>
-<!-- ending up main navbar -->
+        <ul class="womens_items">
+          <li><a href="#">Shirts</a></li>
+          <li><a href="#">Capris And Trousers</a></li>
+          <li><a href="#">T-Shirts And Tanks</a></li>
+          <li><a href="#">Fashion Hodies</a></li>
+          <li><a href="#">Sweatshirts</a></li>
+          <li><a href="#">Swim</a></li>
+          <li><a href="#">Socks</a></li>
+          <li><a href="#">Active</a></li>
+          <li><a href="#">Suits and Sports Coat</a></li>
+          <li><a href="#">Sleeping And Lounge</a></li>
+          <li><a href="#">Sport Coats</a></li>
+        </ul>
+      </div>
 
- <!-- mega menu start -->
-<div class="mega_menu">
-  <ul class="items_in_mega">
+      <div class="sirts_and_items">
+        <h4>Jwellery And Accerories</h4>
 
-    <li class="mega_items women"><a href="#">Womens' Wear <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-    </svg></p></a></li>
-    
-    <li class="mega_items"><a href="#">Mens' Wear <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-    </svg></p></a></li>
-    
-    <li class="mega_items"><a href="#">For Childeren <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-    </svg></p></a></li>
-    
-    <li class="mega_items"><a href="#">Electronics <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-    </svg></p></a></li>
-    
-    <li class="mega_items"><a href="#">Grocery <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-    </svg></p></a></li>
-    
-    <li class="mega_items"><a href="#">Hardware <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-    </svg></p></a></li>
-    
-    <li class="mega_items"><a href="#">Mobiles <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-    </svg></p></a></li>
-    
-    <li class="mega_items"><a href="#">Laptop and PC <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-    </svg></p></a></li>
-    
-    <li class="mega_items"><a href="#">Rashan <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-    </svg></p></a></li>
-    <li class="mega_items"><a href="#">Home Appliances <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-    </svg></p></a></li>
-    <li class="mega_items"><a href="#">Auto Mobile <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-    </svg></p></a></li>
-    <li class="mega_items"><a href="#">Real Estate <p><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-    </svg></p></a></li>
-    
+        <ul class="womens_items">
+          <li><a href="#">Earings</a></li>
+          <li><a href="#">Neckless</a></li>
+          <li><a href="#">Rings</a></li>
+          <li><a href="#">Ancklets</a></li>
+          <li><a href="#">Hair Pins</a></li>
+          <li><a href="#">Brouch</a></li>
+          <li><a href="#">Clutch</a></li>
+          <li><a href="#">Hand Bags</a></li>
+        </ul>
+      </div>
 
-  </ul>
-</div>
+      <div class="sirts_and_items">
+        <h4>Foot Wear</h4>
 
- <!-- mega menu end -->
+        <ul class="womens_items">
+          <li><a href="#">Shoes</a></li>
+          <li><a href="#">Sandals</a></li>
+          <li><a href="#">Slippers</a></li>
+          <li><a href="#">Pumps</a></li>
+          <li><a href="#">Heels</a></li>
+        </ul>
+      </div>
 
+      <div class="sirts_and_items">
+        <h4>Women's Clothing</h4>
 
- <!-- mega menu details start -->
- <div class="mega_details">
+        <ul class="womens_items">
+          <li><a href="#">Shirts</a></li>
+          <li><a href="#">Capris And Trousers</a></li>
+          <li><a href="#">T-Shirts And Tanks</a></li>
+          <li><a href="#">Fashion Hodies</a></li>
+          <li><a href="#">Sweatshirts</a></li>
+          <li><a href="#">Swim</a></li>
+          <li><a href="#">Socks</a></li>
+          <li><a href="#">Active</a></li>
+          <li><a href="#">Suits and Sports Coat</a></li>
+          <li><a href="#">Sleeping And Lounge</a></li>
+          <li><a href="#">Sport Coats</a></li>
+        </ul>
+      </div>
 
-  <div class="sirts_and_items">
-    <h4>Women's Clothing</h4>
+      <div class="sirts_and_items">
+        <h4>Women's Clothing</h4>
 
-    <ul class="womens_items">
-      <li><a href="#">Shirts</a></li>
-      <li><a href="#">Capris And Trousers</a></li>
-      <li><a href="#">T-Shirts And Tanks</a></li>
-      <li><a href="#">Fashion Hodies</a></li>
-      <li><a href="#">Sweatshirts</a></li>
-      <li><a href="#">Swim</a></li>
-      <li><a href="#">Socks</a></li>
-      <li><a href="#">Active</a></li>
-      <li><a href="#">Suits and Sports Coat</a></li>
-      <li><a href="#">Sleeping And Lounge</a></li>
-      <li><a href="#">Sport Coats</a></li>
+        <ul class="womens_items">
+          <li><a href="#">Shirts</a></li>
+          <li><a href="#">Capris And Trousers</a></li>
+          <li><a href="#">T-Shirts And Tanks</a></li>
+          <li><a href="#">Fashion Hodies</a></li>
+          <li><a href="#">Sweatshirts</a></li>
+          <li><a href="#">Swim</a></li>
+          <li><a href="#">Socks</a></li>
+          <li><a href="#">Active</a></li>
+          <li><a href="#">Suits and Sports Coat</a></li>
+          <li><a href="#">Sleeping And Lounge</a></li>
+          <li><a href="#">Sport Coats</a></li>
+        </ul>
+      </div>
+    </div>
 
-    </ul>
-  </div>
-
-  <div class="sirts_and_items">
-    <h4>Jwellery And Accerories</h4>
-
-    <ul class="womens_items">
-      <li><a href="#">Earings</a></li>
-      <li><a href="#">Neckless</a></li>
-      <li><a href="#">Rings</a></li>
-      <li><a href="#">Ancklets</a></li>
-      <li><a href="#">Hair Pins</a></li>
-      <li><a href="#">Brouch</a></li>
-      <li><a href="#">Clutch</a></li>
-      <li><a href="#">Hand Bags</a></li>
-
-    </ul>
-  </div>
-
-  <div class="sirts_and_items">
-    <h4>Foot Wear</h4>
-
-    <ul class="womens_items">
-      <li><a href="#">Shoes</a></li>
-      <li><a href="#">Sandals</a></li>
-      <li><a href="#">Slippers</a></li>
-      <li><a href="#">Pumps</a></li>
-      <li><a href="#">Heels</a></li>
-
-    </ul>
-  </div>
-
-  <div class="sirts_and_items">
-    <h4>Women's Clothing</h4>
-
-    <ul class="womens_items">
-      <li><a href="#">Shirts</a></li>
-      <li><a href="#">Capris And Trousers</a></li>
-      <li><a href="#">T-Shirts And Tanks</a></li>
-      <li><a href="#">Fashion Hodies</a></li>
-      <li><a href="#">Sweatshirts</a></li>
-      <li><a href="#">Swim</a></li>
-      <li><a href="#">Socks</a></li>
-      <li><a href="#">Active</a></li>
-      <li><a href="#">Suits and Sports Coat</a></li>
-      <li><a href="#">Sleeping And Lounge</a></li>
-      <li><a href="#">Sport Coats</a></li>
-
-    </ul>
-  </div>
-
-
-  <div class="sirts_and_items">
-    <h4>Women's Clothing</h4>
-
-    <ul class="womens_items">
-      <li><a href="#">Shirts</a></li>
-      <li><a href="#">Capris And Trousers</a></li>
-      <li><a href="#">T-Shirts And Tanks</a></li>
-      <li><a href="#">Fashion Hodies</a></li>
-      <li><a href="#">Sweatshirts</a></li>
-      <li><a href="#">Swim</a></li>
-      <li><a href="#">Socks</a></li>
-      <li><a href="#">Active</a></li>
-      <li><a href="#">Suits and Sports Coat</a></li>
-      <li><a href="#">Sleeping And Lounge</a></li>
-      <li><a href="#">Sport Coats</a></li>
-
-    </ul>
-  </div>
-
-
- </div>
-
- <!-- mega menu details start -->
-
-
-<script src="app.js"></script>
-</body>
-</html> 
+    <!-- mega menu details start -->
+  </body>
+</html>
